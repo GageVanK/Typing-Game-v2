@@ -28,7 +28,7 @@ import {
     IconCoin,
     IconChevronDown,
   } from '@tabler/icons';
-  
+  import ThemeButton from '../components/ThemeButton'
   const useStyles = createStyles((theme) => ({
     link: {
       display: 'flex',
@@ -118,6 +118,7 @@ import {
             </Group>
   
             <Group className={classes.hiddenMobile}>
+            <ThemeButton/>
               <Button variant="default">Log in</Button>
               
             </Group>
@@ -150,6 +151,7 @@ import {
             <Divider my="sm" color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
   
             <Group position="center" grow pb="xl" px="md">
+                <ThemeButton/>
               <Button variant="default">Log in</Button>
             
             </Group>
