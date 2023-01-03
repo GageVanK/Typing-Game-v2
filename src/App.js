@@ -5,7 +5,7 @@ import Game from './pages/Game';
 import HighScores from './pages/HighScores';
 import NavBar from './components/NavBar';
 import { useState } from 'react';
-import { MantineProvider, ColorSchemeProvider, ColorScheme } from '@mantine/core';
+import { MantineProvider, ColorSchemeProvider} from '@mantine/core';
 function App() {
   const [colorScheme, setColorScheme] = useState('light');
   
