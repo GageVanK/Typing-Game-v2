@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
     createStyles,
     Header,
@@ -91,15 +92,12 @@ import {
   
             <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
              
-             
-               
-              
-              <a href="/" className={classes.link}>
+            <Link to="/" className={classes.link}>
               Home 
-            </a>
-            <a href="/highScores" className={classes.link}>
+            </Link>
+            <Link to="/highScores" className={classes.link}>
               High Scores
-            </a>
+            </Link>
             </Group>
   
             <Group className={classes.hiddenMobile}>
@@ -124,14 +122,12 @@ import {
           <ScrollArea sx={{ height: 'calc(100vh - 60px)' }} mx="-md">
             <Divider my="sm" color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
   
-            <a href="/" className={classes.link}>
+            <Link to="/" className={classes.link}>
               Home 
-            </a>
-           
-           
-            <a href="/highScores" className={classes.link}>
+            </Link>
+            <Link to="/highScores" className={classes.link}>
               High Scores
-            </a>
+            </Link>
   
             <Divider my="sm" color={theme.colorScheme === 'dark' ? 'dark.5' : 'gray.1'} />
   
