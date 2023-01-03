@@ -1,32 +1,17 @@
 import {
     createStyles,
     Header,
-    HoverCard,
     Group,
     Button,
-    UnstyledButton,
     Text,
-    SimpleGrid,
-    ThemeIcon,
-    Anchor,
     Divider,
-    Center,
     Box,
     Burger,
     Drawer,
-    Collapse,
     ScrollArea,
   } from '@mantine/core';
-  import { MantineLogo } from '@mantine/ds';
   import { useDisclosure } from '@mantine/hooks';
   import {
-    IconNotification,
-    IconCode,
-    IconBook,
-    IconChartPie3,
-    IconFingerprint,
-    IconCoin,
-    IconChevronDown,
   } from '@tabler/icons';
   import ThemeButton from '../components/ThemeButton'
   const useStyles = createStyles((theme) => ({
@@ -102,7 +87,7 @@ import {
       <Box pb={120}>
         <Header height={60} px="md">
           <Group position="apart" sx={{ height: '100%' }}>
-            <Text sx={{ fontWeight: 'bold', fontSize: 18, lineHeight: 1.4 }}>Typing React Game</Text>
+            <Text sx={{ fontWeight: 'bold', fontSize: 22, lineHeight: 1.4 }}>Typing React Game</Text>
   
             <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
              
