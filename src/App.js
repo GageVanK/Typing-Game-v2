@@ -17,6 +17,7 @@ function App() {
 <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
       <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
     <BrowserRouter>
+    
     <NavBar />
       <Routes>
         <Route path="/gameOver" element={ <GameOver /> } /> 

@@ -15,6 +15,8 @@ import {
   import {
   } from '@tabler/icons';
   import ThemeButton from '../components/ThemeButton'
+
+
   const useStyles = createStyles((theme) => ({
     link: {
       display: 'flex',
@@ -76,19 +78,17 @@ import {
   }));
   
  
-  
+  //Docs for this NavBar from Mantine UI Header Components - https://ui.mantine.dev/category/headers
+  //Add BoilerPlate and adjust for your project. Super easy!
   export default function NavBar() {
     const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-
     const { classes, theme } = useStyles();
-  
-    
   
     return (
       <Box pb={120}>
         <Header height={60} px="md">
           <Group position="apart" sx={{ height: '100%' }}>
-            <Text sx={{ fontWeight: 'bold', fontSize: 22, lineHeight: 1.4 }}>Typing React Game</Text>
+            <Text component={Link} to='/' sx={{ fontWeight: 'bold', fontSize: 22, lineHeight: 1.4 }}>Typing React Game</Text>
   
             <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
              
