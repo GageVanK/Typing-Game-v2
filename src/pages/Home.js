@@ -1,4 +1,4 @@
-import { Button } from '@mantine/core';
+import { Button, Center, Text } from '@mantine/core';
 import { Link } from 'react-router-dom';
 
 
@@ -8,10 +8,13 @@ import { Link } from 'react-router-dom';
 //Adding Home Page
 export default function Home() {
   return(
-    <div className='gameDiv'>
-    <Button component={Link} to='/game' variant="outline" radius="md" size="md">
+    <div>
+    <Text>Click to Start</Text>
+    <Center>
+    <Button component={Link} to='/game' display="block" ta="center" variant="outline" radius="md" size="md">
       Start Now
     </Button>
+    </Center>
     </div>
   )
 }
