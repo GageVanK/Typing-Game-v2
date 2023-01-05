@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   return(
     <div>
-    <Text>Click to Start</Text>
+    
     <Center>
     <Button component={Link} to='/game' display="block" ta="center" variant="outline" radius="md" size="md">
       Start Now
