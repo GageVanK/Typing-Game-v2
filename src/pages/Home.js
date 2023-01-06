@@ -94,7 +94,7 @@ const addLeadingZeros = (str, length) => {
     <StyledGameDiv>
       <StyledScore>Score: {score}</StyledScore>
       <StyledLetter>A</StyledLetter>
-      <StyledTimer>Time: {seconds}:{ms}</StyledTimer>
+      <StyledTimer>{seconds}:{ms}</StyledTimer>
     </StyledGameDiv>
     
     <Center>
