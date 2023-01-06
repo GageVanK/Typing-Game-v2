@@ -1,4 +1,4 @@
-import { Button } from '@mantine/core';
+import { Button, Center } from '@mantine/core';
 import { StyledGameDiv } from '../components/StyledGameDiv';
 //Adding Home Page
 export default function Home() {
@@ -14,11 +14,11 @@ export default function Home() {
 
     </StyledGameDiv>
     
-    <div>
+    <Center>
 
     <Button display="block" ta="center" variant="outline" radius="md" size="md">
         Start Now
       </Button>
-    </div></>
+    </Center></>
   )
 }

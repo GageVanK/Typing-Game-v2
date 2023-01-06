@@ -1,6 +1,12 @@
-//Adding HighScores Page
-const HighScores = () => (
-    <h1>HighScores</h1>
-  );
+import { Center } from '@mantine/core';
 
-export default HighScores;
+
+//Adding function for HighScores Page
+export default function HighScores() {
+  return(
+    <Center>
+    <h1>High Scores</h1>
+    </Center>
+  )
+
+}
