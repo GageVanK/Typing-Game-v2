@@ -1,6 +1,11 @@
-//Adding GameOver Page
-const GameOver = () => (
-    <h1>Game Over</h1>
-  );
+import { Center } from '@mantine/core';
 
-  export default GameOver;
+//Adding function for HighScores Page
+export default function GameOver() {
+  return(
+    <Center>
+    <h1>Game Over</h1>
+    </Center>
+  )
+
+}
