@@ -1,15 +1,16 @@
 import { Button, Center } from '@mantine/core';
-import { StyledGameDiv } from '../components/StyledGameDiv';
+import { StyledGameDiv, StyledTimer, StyledLetter, StyledScore } from '../components/StyledGame';
+
 //Adding Home Page
 export default function Home() {
   
 
   return(
     <><StyledGameDiv>
-      <p>Score:</p>
+      <StyledScore>Score:</StyledScore>
 
-      <p>A</p>
-      <p>Time:</p>
+      <StyledLetter>A</StyledLetter>
+      <StyledTimer>Time:</StyledTimer>
       
 
     </StyledGameDiv>
