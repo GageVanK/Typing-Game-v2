@@ -5,13 +5,17 @@ import { useNavigate } from 'react-router-dom';
 //Adding Home Page
 export default function Home() {
 
+  
+  const MAX_SECONDS = 5;
+  
   //https://reactjs.org/docs/hooks-intro.html
   //Adding Hooks for the Score(Counter) + Timer(20-Second Interval)
   const [score] = useState(1);
-  const MAX_SECONDS = 5;
   const [ms, setMs] = useState(999);
   const [seconds, setSeconds] = useState(MAX_SECONDS);
-  const [isRunning, setIsRunning] = useState(false)
+  const [isRunning, setIsRunning] = useState(false);
+
+  //https://www.geeksforgeeks.org/reactjs-usenavigate-hook/
   const navigate = useNavigate();
 
   useEffect(() => {

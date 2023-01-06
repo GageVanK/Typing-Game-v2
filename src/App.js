@@ -15,20 +15,20 @@ function App() {
   }
 
   return (
-<ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-      <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
+    <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
+    <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
+    
     <BrowserRouter>
-    
-    <NavBar />
-    <StyledPageContainer>
-    
-      <Routes>
-        <Route path="/gameOver" element={ <GameOver /> } /> 
-        <Route path="/highScores" element={ <HighScores /> } /> 
-        <Route path="/" element={ <Home /> } /> 
-      </Routes>
-    </StyledPageContainer>
+      <NavBar />
+      <StyledPageContainer>
+        <Routes>
+          <Route path="/gameOver" element={ <GameOver /> } /> 
+          <Route path="/highScores" element={ <HighScores /> } /> 
+          <Route path="/" element={ <Home /> } /> 
+        </Routes>
+      </StyledPageContainer>
     </BrowserRouter>
+
     </MantineProvider>
     </ColorSchemeProvider>
   
