@@ -85,7 +85,7 @@ import {
     const { classes, theme } = useStyles();
   
     return (
-      <Box pb={120}>
+      <Box pb={5}>
         <Header height={60} px="md">
           <Group position="apart" sx={{ height: '100%' }}>
             <Text component={Link} to='/' sx={{ fontWeight: 'bold', fontSize: 22, lineHeight: 1.4 }}>Typing React Game</Text>
