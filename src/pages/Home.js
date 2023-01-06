@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Home() {
 
   
-  const MAX_SECONDS = 5;
+  const MAX_SECONDS = 19;
   
   //https://reactjs.org/docs/hooks-intro.html
   //Adding Hooks for the Score(Counter) + Timer(20-Second Interval)
