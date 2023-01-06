@@ -6,20 +6,18 @@ export default function Home() {
   
 
   return(
-    <><StyledGameDiv>
+  <>
+    <StyledGameDiv>
       <StyledScore>Score:</StyledScore>
-
       <StyledLetter>A</StyledLetter>
       <StyledTimer>Time:</StyledTimer>
-      
-
     </StyledGameDiv>
     
     <Center>
-
-    <Button display="block" ta="center" variant="outline" radius="md" size="md">
+      <Button display="block" ta="center" variant="outline" radius="md" size="md">
         Start Now
       </Button>
-    </Center></>
+    </Center>
+  </>
   )
 }

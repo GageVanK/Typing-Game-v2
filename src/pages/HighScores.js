@@ -1,6 +1,5 @@
 import { Center } from '@mantine/core';
 
-
 //Adding function for HighScores Page
 export default function HighScores() {
   return(
