@@ -1,4 +1,4 @@
-import { Button, Group } from '@mantine/core';
+import { Button } from '@mantine/core';
 import styled from 'styled-components';
 
 //Adding Home Page
