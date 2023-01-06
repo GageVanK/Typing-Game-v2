@@ -5,6 +5,8 @@ import HighScores from './pages/HighScores';
 import NavBar from './components/NavBar';
 import { useState } from 'react';
 import { MantineProvider, ColorSchemeProvider} from '@mantine/core';
+import { StyledPageContainer } from './components/StyledPageContainer';
+
 function App() {
   const [colorScheme, setColorScheme] = useState('light');
   
@@ -18,11 +20,14 @@ function App() {
     <BrowserRouter>
     
     <NavBar />
+    <StyledPageContainer>
+    
       <Routes>
         <Route path="/gameOver" element={ <GameOver /> } /> 
         <Route path="/highScores" element={ <HighScores /> } /> 
         <Route path="/" element={ <Home /> } /> 
       </Routes>
+    </StyledPageContainer>
     </BrowserRouter>
     </MantineProvider>
     </ColorSchemeProvider>
