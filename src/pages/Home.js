@@ -7,7 +7,7 @@ export default function Home() {
 
   //https://reactjs.org/docs/hooks-intro.html
   //Adding Hooks for the Score(Counter) + Timer(20-Second Interval)
-  const [score, setScore] = useState(1);
+  const [score] = useState(1);
   const MAX_SECONDS = 5;
   const [ms, setMs] = useState(999);
   const [seconds, setSeconds] = useState(MAX_SECONDS);
@@ -25,6 +25,7 @@ export default function Home() {
     return () => {
         clearInterval(interval);
     }};
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, [isRunning]);
 
 
