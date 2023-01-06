@@ -1,5 +1,5 @@
 import { Button, Center } from '@mantine/core';
-import { Link } from 'react-router-dom';
+
 
 
   
@@ -11,7 +11,7 @@ export default function Home() {
     <div>
     
     <Center>
-    <Button component={Link} to='/game' display="block" ta="center" variant="outline" radius="md" size="md">
+    <Button display="block" ta="center" variant="outline" radius="md" size="md">
       Start Now
     </Button>
     </Center>
