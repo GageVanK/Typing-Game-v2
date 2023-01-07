@@ -2,17 +2,19 @@ import { Button, Center } from '@mantine/core';
 import { StyledGameDiv, StyledTimer, StyledLetter, StyledScore } from '../components/StyledGame';
 import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
-//Adding Home Page
-export default function Home() {
+import { useScore } from '../contexts/ScoreContext';
 
-  
-//Using alphabet for game  
-const letters = 'abcdefghijklmnopqrstuvwxyz';
+//Adding Home Page 
+export default function Home() {
+  const MAX_SECONDS = 19;
+  //Using alphabet for game  
+  const letters = 'abcdefghijklmnopqrstuvwxyz';
+
   const [currentLetter, setCurrentLetter] = useState(' ');
   //https://reactjs.org/docs/hooks-intro.html
   //Adding Hooks for the Score(Counter) + Timer(20-Second Interval)
-  const [score, setScore] = useState(0);
-  const MAX_SECONDS = 19;
+  const [score, setScore] = useScore();
+  
   const [ms, setMs] = useState(999);
   const [seconds, setSeconds] = useState(MAX_SECONDS);
   const [isRunning, setIsRunning] = useState(false);
@@ -24,6 +26,9 @@ const letters = 'abcdefghijklmnopqrstuvwxyz';
   useEffect(() => {
     const currentTime = new Date();
     setRandomLetter();
+
+    //Calling setScore from ScoreContext
+    setScore(0);
 
     //Using isRunning hook to use Button to start the timer
     if (isRunning) {
@@ -110,7 +115,7 @@ const keyUpHandler = useCallback(
     setRandomLetter();
   },
   // The keyUpHandler function only needs to be re-created if the currentLetter changes
-  [currentLetter, score, isRunning]
+  [currentLetter, score, isRunning, setScore]
 );
 
 //https://www.w3schools.com/jsref/met_document_addeventlistener.asp
