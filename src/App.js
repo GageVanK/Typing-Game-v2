@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { MantineProvider, ColorSchemeProvider} from '@mantine/core';
+import { StyledPageContainer } from './components/StyledPageContainer';
 import Home from './pages/Home';
 import GameOver from './pages/GameOver';
 import HighScores from './pages/HighScores';
 import NavBar from './components/NavBar';
-import { MantineProvider, ColorSchemeProvider} from '@mantine/core';
-import { StyledPageContainer } from './components/StyledPageContainer';
 
 function App() {
 
