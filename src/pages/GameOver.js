@@ -2,10 +2,11 @@ import { Center, Button, Text } from '@mantine/core';
 import { useScore } from '../contexts/ScoreContext';
 import { Link } from 'react-router-dom';
 
+
 //Adding function for HighScores Page
 export default function GameOver() {
   const [score] = useScore();
-
+ 
   return(
     <>
       <Center>
