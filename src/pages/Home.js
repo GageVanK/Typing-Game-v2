@@ -113,6 +113,8 @@ const keyUpHandler = useCallback(
   [currentLetter, score, isRunning]
 );
 
+//https://www.w3schools.com/jsref/met_document_addeventlistener.asp
+//https://github.com/aritrakoley/ReactJS_useEffect_addEventListener
 // Add an event listener that calls the keyUpHandler function when the 'keyup' event is fired
 useEffect(() => {
   document.addEventListener('keyup', keyUpHandler);
