@@ -12,7 +12,7 @@ export default function GameOver() {
         <h1>Game Over</h1>
       </Center>
       <Center>
-        <Text fw={500}>Score: {score}</Text>
+        <Text fz="xl" fw={500}>Score: {score}</Text>
       </Center>
       <Center>
         <Button mt="md" component={Link} to='/' variant="outline" radius="md" size="md">
