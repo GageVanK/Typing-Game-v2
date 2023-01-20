@@ -94,7 +94,7 @@ import {
             <ThemeButton/>
               
               
-            </Group>
+            
   
             <Burger opened={drawerOpened} onClick={toggleDrawer} className={classes.hiddenDesktop} />
           </Group>
