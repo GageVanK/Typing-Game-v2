@@ -90,19 +90,9 @@ import {
           <Group position="apart" sx={{ height: '100%' }}>
             <Text component={Link} to='/' sx={{ fontWeight: 'bold', fontSize: 22, lineHeight: 1.4 }}>Typing React Game</Text>
   
-            <Group sx={{ height: '100%' }} spacing={0} className={classes.hiddenMobile}>
-             
-            <Link to="/" className={classes.link}>
-              Home 
-            </Link>
-            <Link to="/highScores" className={classes.link}>
-              High Scores
-            </Link>
-            </Group>
-  
-            <Group className={classes.hiddenMobile}>
+          
             <ThemeButton/>
-              <Button variant="default">Log in</Button>
+              
               
             </Group>
   
